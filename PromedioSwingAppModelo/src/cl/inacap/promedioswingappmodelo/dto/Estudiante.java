@@ -1,7 +1,6 @@
 package cl.inacap.promedioswingappmodelo.dto;
 
 public class Estudiante {
-
 	private int id;
 	private String nombre;
 	private String asignatura;
@@ -85,7 +84,4 @@ public class Estudiante {
 	public String toString() {
 		return "[Nombre]= " + this.nombre + " [Nota 1]= " + this.nota1 + " [Nota 2]= " + this.nota2 + " [Nota 3]= " + this.nota3 + " [Nota 4]= " + this.nota4 + " [Promedio]= " + (nota1 + nota2 + nota3 + nota4) / 4;
 	}
-	
-	
-	
 }
