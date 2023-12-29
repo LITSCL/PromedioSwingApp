@@ -84,21 +84,21 @@ public class ModificarEstudianteFrame extends JInternalFrame {
 			Estudiante estudianteSeleccionado = estudiantesIngresados.get(listEstudiantes.getSelectedIndex()); //Se obtiene el objeto de la lista utilizando el indice de lo que el usuario selecciono en el JList y se almacena en una variable.
 			if (comboBoxModificar.getSelectedItem().equals("Nota 1")) { //Si el valor del JComboBox es igual a Patente, entonces ejecuta dicho código.
 				if (textFieldModificar.getText().equals("")) {
-					JOptionPane.showMessageDialog(null,"- No hay nada escrito en el JTextField", "Error de validación",JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
+					JOptionPane.showMessageDialog(null,"- No hay nada escrito en el JTextField", "Error de validación", JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
 				}
 				else {
 					try {
 						String modificar = textFieldModificar.getText(); //Se almacena el valor del JTextField en una variable.
 						double nota = Double.parseDouble(modificar);
 						if (nota < 1.0 || nota > 7.0) {
-							JOptionPane.showMessageDialog(null,"- La nota esta fuera de rango (1.0/7.0)","Error de validación",JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
+							JOptionPane.showMessageDialog(null,"- La nota esta fuera de rango (1.0/7.0)","Error de validación", JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
 						}
 						else {
 							estudianteSeleccionado.setNota1(nota); //Aca se modifica su atributo.
 							daoEstudiante.update(estudianteSeleccionado); //Aca se selecciona el objeto y se manda a actualizar.
 						}
 					} catch (Exception ex) {
-						JOptionPane.showMessageDialog(null,"- El valor que ingresó no es válido", "Error de validación",JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
+						JOptionPane.showMessageDialog(null,"- El valor que ingresó no es válido", "Error de validación", JOptionPane.WARNING_MESSAGE); //El primer parametro siempre debe ser null para que el mensaje se centre, en el segundo parametro va el mensaje a mostrar,en el tercer parametro va el titulo de la ventana y en el cuarto parametro va el tipo de error.
 					}
 				}
 			}
