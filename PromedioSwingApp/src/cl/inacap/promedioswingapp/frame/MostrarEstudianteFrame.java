@@ -82,7 +82,7 @@ public class MostrarEstudianteFrame extends JInternalFrame { //Esta clase hereda
 		if ("Promedio menor que 4.0".equals(seleccion)) { //Si el promedio es menor que 4 y la cedena coincide con lo que seleccionó el usuario, el código se ejecuta.
 			List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante("<4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
 			
-			for(Estudiante es : estudiantesFiltrados) {
+			for (Estudiante es : estudiantesFiltrados) {
 
 				Object[] fila = new Object[3];
 				fila[0] = es.getNombre();
@@ -104,7 +104,8 @@ public class MostrarEstudianteFrame extends JInternalFrame { //Esta clase hereda
 				mo.addRow(fila);
 			}
 			
-		} else if ("Promedio mayor que 4.0".equals(seleccion)) {
+		} 
+		else if ("Promedio mayor que 4.0".equals(seleccion)) {
 			List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante(">4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
 		
 			for (Estudiante es : estudiantesFiltrados) {
