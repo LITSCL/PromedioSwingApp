@@ -24,7 +24,7 @@ public class IngresarEstudianteFrame extends JInternalFrame { //Esta clase hered
 	private JTextField textFieldNota1;
 	private JTextField textFieldNota2;
 	private JTextField textFieldNota3;
-	private JComboBox <String> comboBoxAsignatura; //A los JComboBox siempre hay que asignarles el tipo de dato que van a mostrar, y al momento de crear el objeto deben tener un <>.
+	private JComboBox<String> comboBoxAsignatura; //A los JComboBox siempre hay que asignarles el tipo de dato que van a mostrar, y al momento de crear el objeto deben tener un <>.
 
 	//Proceso de creación del frame.
 	public IngresarEstudianteFrame() {

@@ -83,7 +83,6 @@ public class MostrarEstudianteFrame extends JInternalFrame { //Esta clase hereda
 			List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante("<4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
 			
 			for (Estudiante es : estudiantesFiltrados) {
-
 				Object[] fila = new Object[3];
 				fila[0] = es.getNombre();
 				fila[1] = es.getAsignatura();
@@ -96,7 +95,6 @@ public class MostrarEstudianteFrame extends JInternalFrame { //Esta clase hereda
 			List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante("=4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
 			
 			for (Estudiante es : estudiantesFiltrados) {
-
 				Object[] fila = new Object[3];
 				fila[0] = es.getNombre();
 				fila[1] = es.getAsignatura();
@@ -109,7 +107,6 @@ public class MostrarEstudianteFrame extends JInternalFrame { //Esta clase hereda
 			List<Estudiante> estudiantesFiltrados = new EstudianteDAO().filtrarEstudiante(">4.0"); //En esta lista se almacenan todos los estudiantes que estan filtrados según el parámetro dado.
 		
 			for (Estudiante es : estudiantesFiltrados) {
-
 				Object[] fila = new Object[3];
 				fila[0] = es.getNombre();
 				fila[1] = es.getAsignatura();
